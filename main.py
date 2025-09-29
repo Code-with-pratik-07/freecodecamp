@@ -1,12 +1,15 @@
-from medical_data_visualizer import draw_cat_plot, draw_heat_map
+
+from time_series_visualizer import draw_line_plot, draw_bar_plot, draw_box_plot
 import matplotlib.pyplot as plt
 
-# Categorical plot
-fig1 = draw_cat_plot()
-fig1.savefig('catplot.png')  # save figure if you want
+# Line Plot
+fig1 = draw_line_plot()
+fig1.show()
 
-# Heat map
-fig2 = draw_heat_map()
-fig2.savefig('heatmap.png')  # save figure if you want
+# Bar Plot
+fig2 = draw_bar_plot()
+fig2.show()
 
-plt.show()  # optionally show the plots
+# Box Plot
+fig3 = draw_box_plot()
+fig3.show()
